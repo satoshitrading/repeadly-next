@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     remotePatterns: [
     { protocol: 'https', hostname: 'nmgprod.s3.amazonaws.com' }
@@ -17,9 +14,6 @@ const nextConfig = {
     },
     optimizePackageImports: []
   },
-  webpack: (config) => {
-    return config
-  }
 };
 
 export default nextConfig;
